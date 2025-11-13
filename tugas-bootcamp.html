@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="tugas-bootcamp.css">
+  <head>
+  <script src="https://kit.fontawesome.com/495515fa39.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="kotak">
+  <header class="kepala">
+    <h1>Awwal</h1>
+    
+      <ul>
+        <li><a href="#tenteng">Tentang</a></li>
+        <li><a href="#pendidikan">Pendidikan</a></li>
+        <li><a href="#kontak">Kontak</a></li>
+      </ul>
+     
+  </header>  
+  <main>
+    <div class="isi">
+    <img src="gambar/awal.jpeg" alt="Gambar Saya" class="gambar">
+    <div class="teksmain">
+    <h1>Muhammad Awwalul Ramadhan</h1>
+    <p>Mahasiswa Aktif di Politeknik Negeri Ujung Pandang jurusan Teknik Informatika dan Komputer program studi D4 Teknik Komputer & Jaringan. </p>
+    </div>
+    </div>
+
+    <div class="tentang" id="tentang">
+     <h2>Tentang Saya</h2>
+     <p>Saya Muhammad Awwalul Ramadhan, seorang mahasiswa dari Politeknik Negeri Ujung Pandang, yang saat ini menempuh pendidikan di jurusan Teknik Komputer dan Jaringan.
+        Saya memilih jurusan ini karena ketertarikan saya yang besar pada bagaimana data bergerak dan bagaimana sistem komputer berinteraksi. Sebagai mahasiswa baru, saya sedang fokus membangun fondasi yang kuat, mulai dari logika pemrograman dengan bahasa C, memahami dasar-dasar hardware, hingga belajar layouting web modern.
+        Saya bersemangat untuk menyerap semua ilmu di politeknik dan berharap dapat berkontribusi pada proyek-proyek menarik ke depannya</p>
+    </div>
+
+    <div class="pendidikan" id="pendidikan">
+      <h2>Pendidikan</h2>
+      <ul>
+        <li>
+          <h3>Politeknik Negeri Ujung Pandang</h3>
+          <p><strong>Program Studi :</strong> D4 Teknik Komputer & Jaringan</p>
+          <p><strong>Tahun : </strong>2025 - sekarang</p>
+        </li>
+        <li>
+          <h3>SMAS Muhammadiyah Kalosi</h3>
+          <p><strong>Jurusan : </strong>IPA</p>
+          <p><strong>Tahun : </strong>20222 - 2025</p>
+        </li>
+      </ul>
+    </div>
+
+    <div class="kontak" id="kontak">
+      <h2>Kontak</h2>
+      <p>Saya selalu terbuka untuk berdiskusi dan membangun jaringan, jangan ragu untuk menghubungi saya.</p>
+      <p>Anda dapat mengirimkan email langsung ke:
+      <a href="">muhawwal9k@gmail.com</a>
+      </p>
+    </div>
+  </main>
+  <footer>
+    <div class="ikon-medsos">
+    <i class="fa-brands fa-instagram fa-2x"></i>
+    <i class="fa-brands fa-linkedin fa-2x"></i>
+  </div>
+  <div class="cp">
+    &copy;2025:Muhammad Awwalul Ramadhan
+  </div>
+  </footer>
+  </div>
+
+  <script> 
+    alert("TERHUBUNG!");
+const gambar = document.querySelector (".gambar");
+     gambar.addEventListener ("mouseover", function(){
+      console.log ("gambar diarahkan");
+      gambar.setAttribute ("src", "gambar/gambarku.jpeg");
+     })
+
+     const gambarawal = document.querySelector (".gambar");
+     gambarawal.addEventListener ("mouseout", function (){
+      console.log("mouse keluar");
+      gambarawal.setAttribute ("src", "gambar/awal.jpeg");
+     })
+
+     const logo = document.querySelector (".kepala h1");
+     logo.addEventListener ("mouseover", function(){
+      console.log("mouse diarahkan");
+      logo.style.color="black";
+      logo.innerHTML="Ganteng"
+     })
+
+     
+     const logosemula = document.querySelector (".kepala h1");
+     logosemula.addEventListener ("mouseout", function(){
+      console.log("mouse diarahkan");
+      logosemula.style.color="white";
+      logosemula.innerHTML="Awwal"
+     })
+  </script>
+
+ 
+</body>
+</html>
